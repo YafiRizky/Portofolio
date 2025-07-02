@@ -1,0 +1,42 @@
+{
+  "emergency_responses": {
+    "bunuh_diri": "🚨 PERINGATAN DARURAT: Jika Anda memiliki pikiran untuk menyakiti diri sendiri, SEGERA hubungi bantuan darurat. Hidup Anda sangat berharga dan ada bantuan yang tersedia 24/7.\n\n📞 HUBUNGI SEKARANG:\n• 119 (Hotline Nasional - 24/7)\n• 0804-1-500-454 (Yayasan Pulih)\n• 0811-976-9995 (SEJIWA - 24/7)\n\nAnda TIDAK sendirian dalam perjuangan ini. Banyak orang peduli dan siap membantu. Mohon jangan menyerah.",
+    "suicide": "🚨 EMERGENCY WARNING: If you're having thoughts of harming yourself, please reach out for help IMMEDIATELY. Your life has immense value and help is available 24/7.\n\n📞 CONTACT NOW:\n• 119 (National Hotline - 24/7)\n• 0804-1-500-454 (Yayasan Pulih)\n• 0811-976-9995 (SEJIWA - 24/7)\n\nYou are NOT alone in this struggle. Many people care and are ready to help. Please don't give up.",
+    "menyakiti_diri": "🚨 PERINGATAN: Saya sangat khawatir dengan Anda. Jika Anda memiliki keinginan untuk menyakiti diri sendiri, tolong segera cari bantuan profesional.\n\n📞 Hubungi:\n• 119 (Darurat Nasional)\n• 0804-1-500-454 (Yayasan Pulih)\n• 0811-976-9995 (SEJIWA)\n\nAnda tidak sendirian dan bantuan tersedia. Hidup Anda berharga.",
+    "self_harm": "🚨 WARNING: I'm very concerned about you. If you have urges to harm yourself, please seek professional help immediately.\n\n📞 Contact:\n• 119 (National Emergency)\n• 0804-1-500-454 (Yayasan Pulih)\n• 0811-976-9995 (SEJIWA)\n\nYou're not alone and help is available. Your life matters.",
+    "krisis": "🆘 Sepertinya Anda sedang dalam situasi yang sangat sulit. Dalam keadaan krisis, penting untuk segera mendapatkan dukungan profesional.\n\n📞 Hubungi hotline krisis:\n• 119 (24/7)\n• 0804-1-500-454 (Konselor Yayasan Pulih)\n• 0811-976-9995 (SEJIWA - 24/7)\n\nJangan hadapi ini sendirian. Bantuan tersedia.",
+    "emergency": "🆘 This seems like a crisis situation. Please consider reaching out to crisis support immediately:\n\n📞 Contact:\n• 119 (24/7)\n• 0804-1-500-454 (Yayasan Pulih Counselor)\n• 0811-976-9995 (SEJIWA - 24/7)\n\nProfessional support is crucial in crisis situations. You don't have to face this alone."
+  },
+  "emergency_keywords": [
+    "bunuh diri", "suicide", "ingin mati", "mengakhiri hidup", 
+    "tidak ingin hidup", "mau mati", "bundir", "self harm",
+    "menyakiti diri", "melukai diri", "potong diri", "suicide ideation",
+    "ingin mengakhiri", "tidak tahan lagi", "lelah hidup", "putus asa total"
+  ],
+  "hotlines": [
+    {
+      "name": "Hotline Nasional Indonesia",
+      "number": "119",
+      "available": "24/7",
+      "description": "Layanan darurat nasional untuk krisis kesehatan mental dan pencegahan bunuh diri"
+    },
+    {
+      "name": "Yayasan Pulih",
+      "number": "0804-1-500-454",
+      "available": "Senin-Jumat 10:00-17:00",
+      "description": "Konseling dan dukungan psikologis gratis untuk korban kekerasan dan trauma"
+    },
+    {
+      "name": "Into The Light Indonesia",
+      "number": "0821-1333-8595",
+      "available": "24/7",
+      "description": "Dukungan khusus untuk depresi, kecemasan, dan gangguan suasana hati"
+    },
+    {
+      "name": "Dinas Kesehatan DKI Jakarta - Layanan Psikologi",
+      "number": "0821-2783-0002",
+      "available": "24/7",
+      "description": "Layanan konseling psikologi darurat khusus wilayah Jakarta"
+    }
+  ]
+}

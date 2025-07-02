@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AuraMind - Pendamping Kesehatan Mental</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <h1>🌌 AuraMind</h1>
+                <p>Pendamping AI untuk Kesehatan Mental Anda</p>
+            </div>
+        </header>
+
+        <div class="main-layout">
+            <aside class="left-sidebar">
+                <div class="sidebar-section">
+                    <h3>🆘 Bantuan Darurat</h3>
+                    <p class="emergency-notice">Jika Anda dalam krisis, segera hubungi nomor berikut:</p>
+                    <div class="hotlines">
+                        {% for hotline in hotlines %}
+                        <div class="hotline-item">
+                            <div class="hotline-header">
+                                <strong>{{ hotline.name }}</strong>
+                                <span class="hotline-number">{{ hotline.number }}</span>
+                            </div>
+                            <p class="hotline-description">{{ hotline.description }}</p>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                 <div class="sidebar-section">
+                    <h3>⚠️ Disclaimer</h3>
+                    <p class="disclaimer">
+                        AuraMind adalah chatbot AI dan bukan pengganti konsultasi profesional. Silakan hubungi psikolog atau psikiater untuk diagnosis dan perawatan.
+                    </p>
+                </div>
+            </aside>
+
+            <main class="chat-area">
+                <div class="chat-container">
+                    <div class="chat-header">
+                        <div class="bot-info">
+                            <div class="bot-avatar">❤️</div>
+                            <div class="bot-details">
+                                <h3>AuraMind</h3>
+                                <span class="status">Online - Siap mendengarkan</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chat-messages" id="chatMessages">
+                        <div class="message bot-message">
+                            <div class="message-content">
+                                <p>Halo! Saya AuraMind. Untuk memulai, silakan pilih salah satu topik di samping yang paling sesuai dengan apa yang Anda rasakan saat ini. 💙</p>
+                            </div>
+                            <div class="message-time" id="initialTime"></div>
+                        </div>
+                    </div>
+                    <form class="chat-input-form" id="chatForm">
+                        <div class="input-container">
+                            <input type="text" id="userInput" name="user_input" placeholder="Ketik pesan Anda atau pilih topik..." autocomplete="off" required>
+                            <button type="submit" id="sendButton">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                                    <polygon points="22,2 15,22 11,13 2,9 22,2"></polygon>
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </main>
+
+            <aside class="right-sidebar">
+                <div class="sidebar-section">
+                    <!-- [UPDATED] Judul diubah -->
+                    <h3>💬 Topik yang dapat kita bahas</h3>
+                    <p class="sidebar-description">Klik salah satu topik untuk memulai percakapan yang terfokus.</p>
+                    
+                    <!-- [UPDATED] Daftar topik baru dengan kategori -->
+                    <div class="topic-categories">
+                        {% for category in topic_categories %}
+                        <div class="topic-category-group">
+                            <h4>{{ category.name }}</h4>
+                            <div class="topic-list">
+                                {% for topic in category.topics %}
+                                <button class="topic-button" data-topic-key="{{ topic.key }}">
+                                    <strong class="topic-title">{{ topic.display_name }}</strong>
+                                    <span class="topic-description">{{ topic.description }}</span>
+                                </button>
+                                {% endfor %}
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('initialTime').textContent = new Date().toLocaleTimeString('id-ID', { hour: '2-digit', minute: '2-digit' });
+
+        const chatForm = document.getElementById('chatForm');
+        const userInput = document.getElementById('userInput');
+        const chatMessages = document.getElementById('chatMessages');
+        const sendButton = document.getElementById('sendButton');
+
+        async function sendMessage(message) {
+            if (!message || !message.trim()) return;
+
+            addMessage(message, 'user');
+            userInput.value = '';
+            sendButton.disabled = true;
+            sendButton.innerHTML = '<div class="loading-spinner"></div>';
+
+            try {
+                const formData = new FormData();
+                formData.append('user_input', message);
+                
+                const response = await fetch('/get_response', { method: 'POST', body: formData });
+                const data = await response.json();
+
+                if (response.ok) {
+                    addMessage(data.response, 'bot');
+                } else {
+                    addMessage(data.error || 'Maaf, terjadi kesalahan.', 'bot');
+                }
+                
+            } catch (error) {
+                console.error('Error:', error);
+                addMessage('Tidak dapat terhubung ke server. Silakan coba lagi.', 'bot');
+            } finally {
+                sendButton.disabled = false;
+                sendButton.innerHTML = `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22,2 15,22 11,13 2,9 22,2"></polygon></svg>`;
+                userInput.focus();
+            }
+        }
+
+        chatForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            sendMessage(userInput.value);
+        });
+
+        // [UPDATED] Event listener untuk tombol topik baru
+        document.querySelectorAll('.topic-button').forEach(button => {
+            button.addEventListener('click', () => {
+                const topicKey = button.getAttribute('data-topic-key');
+                // Mengirim langsung 'key' dari topik, agar backend bisa memprosesnya
+                sendMessage(topicKey);
+            });
+        });
+
+        function addMessage(message, sender) {
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${sender}-message`;
+            
+            const currentTime = new Date().toLocaleTimeString('id-ID', { hour: '2-digit', minute: '2-digit' });
+            
+            const contentDiv = document.createElement('div');
+            contentDiv.className = 'message-content';
+            contentDiv.innerHTML = `<p>${message}</p>`;
+            
+            const timeDiv = document.createElement('div');
+            timeDiv.className = 'message-time';
+            timeDiv.textContent = currentTime;
+
+            messageDiv.appendChild(contentDiv);
+            messageDiv.appendChild(timeDiv);
+            chatMessages.appendChild(messageDiv);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+
+        userInput.focus();
+    </script>
+</body>
+</html>

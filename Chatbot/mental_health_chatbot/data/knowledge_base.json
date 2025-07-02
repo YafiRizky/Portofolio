@@ -1,0 +1,170 @@
+{
+  "stres": {
+    "display_name": "Stres",
+    "definition": "Stres adalah respons alami tubuh terhadap tekanan dari situasi atau pikiran tertentu. Meskipun stres jangka pendek dapat memotivasi, stres kronis yang tidak terkelola dapat membahayakan kesehatan fisik dan mental Anda secara signifikan.",
+    "suggestions": [
+      {
+        "category": "🗓️ Jadwal & Prioritas",
+        "title": "Gunakan Metode 'Satu-Tiga-Lima'",
+        "description": "Setiap hari, pilih: 1 tugas besar yang harus selesai, 3 tugas sedang, dan 5 tugas kecil. Ini membantumu fokus pada prioritas tanpa merasa semua tugas harus selesai bersamaan."
+      },
+      {
+        "category": "🧘 Teknik Relaksasi",
+        "title": "Lakukan 'Grounding 5-4-3-2-1'",
+        "description": "Saat stres memuncak, berhenti sejenak dan coba ini: Sebutkan 5 benda yang kamu lihat, 4 yang bisa disentuh, 3 yang didengar, 2 yang dicium, dan 1 yang bisa dirasakan. Ini menarik pikiranmu kembali ke saat ini."
+      },
+      {
+        "category": "🏃‍♂️ Kesehatan Fisik",
+        "title": "Terapkan 'Micro-Breaks'",
+        "description": "Setiap 60 menit, ambil istirahat 5 menit untuk berdiri, lakukan peregangan ringan pada leher dan bahu, dan minum air putih. Gerakan fisik singkat bisa mengurangi hormon stres."
+      }
+    ]
+  },
+  "insomnia": {
+    "display_name": "Insomnia",
+    "definition": "Insomnia adalah gangguan tidur umum yang membuat Anda sulit untuk tidur, sulit untuk tetap tidur, atau menyebabkan Anda bangun terlalu dini dan tidak dapat kembali tidur. Ini dapat menguras tingkat energi dan suasana hati Anda.",
+    "suggestions": [
+      {
+        "category": "🗓️ Ritual Tidur",
+        "title": "Ciptakan Zona Tenang",
+        "description": "Satu jam sebelum tidur, hindari layar gadget (HP, TV, Laptop). Cahaya biru dari layar dapat menekan produksi melatonin, hormon tidur. Ganti dengan aktivitas menenangkan seperti membaca buku atau mendengarkan musik lembut."
+      },
+      {
+        "category": "🛌 Lingkungan",
+        "title": "Optimalkan Kamar Tidur",
+        "description": "Pastikan kamarmu gelap, sejuk, dan tenang. Gunakan tirai tebal, atur suhu AC, dan jika perlu gunakan penutup telinga. Tempat tidur hanya untuk tidur, bukan untuk bekerja atau makan."
+      },
+      {
+        "category": "🧘 Pola Pikir",
+        "title": "Gunakan Teknik 'Paradoxical Intention'",
+        "description": "Jika pikiranmu cemas karena tidak bisa tidur, coba untuk tetap terjaga dengan tenang. Berbaring dan katakan pada dirimu, 'Aku tidak akan memaksakan diri untuk tidur'. Menghilangkan tekanan untuk tidur seringkali justru membuat rileks dan lebih mudah terlelap."
+      }
+    ]
+  },
+  "kecemasan": {
+    "display_name": "Gangguan Kecemasan",
+    "definition": "Gangguan kecemasan ditandai oleh perasaan khawatir, cemas, atau takut yang intens dan terus-menerus tentang situasi sehari-hari, yang terkadang dapat memicu serangan panik.",
+    "suggestions": [
+      {
+        "category": "🚨 Mengenali Gejala",
+        "title": "Waspadai Serangan Panik",
+        "description": "Gejala serangan panik bisa berupa jantung berdebar, nyeri dada, berkeringat, gemetar, dan perasaan takut yang luar biasa. Ini seringkali terjadi secara tiba-tiba dan tanpa alasan yang jelas."
+      },
+      {
+        "category": "🧘 Manajemen Diri",
+        "title": "Latihan Pernapasan Dalam",
+        "description": "Jika gejala panik muncul, coba duduk dan pejamkan mata. Tarik napas dalam-dalam melalui hidung, lalu hembuskan perlahan melalui mulut. Ulangi beberapa kali hingga merasa lebih tenang."
+      },
+      {
+        "category": "🧑‍⚕️ Kapan Harus ke Dokter",
+        "title": "Saat Sulit Dikendalikan",
+        "description": "Jika rasa cemas muncul tanpa sebab yang jelas, sulit dikendalikan, atau sudah mengganggu aktivitas sehari-hari, sangat disarankan untuk berkonsultasi dengan psikolog atau psikiater."
+      }
+    ]
+  },
+  "ocd": {
+    "display_name": "Obsessive-Compulsive Disorder (OCD)",
+    "definition": "OCD adalah gangguan mental yang menyebabkan pengidapnya memiliki pemikiran obsesif dan perilaku kompulsif (berulang) yang sulit dihentikan, meskipun ia tidak menginginkannya.",
+    "suggestions": [
+      {
+        "category": "🧠 Mengenali Gejala",
+        "title": "Membedakan Obsesi dan Kompulsi",
+        "description": "Obsesi adalah pikiran atau dorongan yang datang berulang kali (misal: takut kuman). Kompulsi adalah tindakan yang dilakukan untuk meredakan kecemasan dari obsesi itu (misal: mencuci tangan berlebihan)."
+      },
+      {
+        "category": "🧘 Manajemen Diri",
+        "title": "Belajar Menunda Respon",
+        "description": "Saat dorongan kompulsif muncul, coba tunda tindakan tersebut selama beberapa menit. Secara bertahap, perpanjang waktu penundaan. Ini adalah bagian dari teknik yang disebut 'Exposure and Response Prevention' (ERP)."
+      },
+      {
+        "category": "🧑‍⚕️ Kapan Harus ke Dokter",
+        "title": "Jika Mengganggu Kehidupan",
+        "description": "Jika ritual kompulsif sudah menyita banyak waktu, menyebabkan stres berat, atau mengganggu pekerjaan dan hubungan sosial, segera cari bantuan profesional. OCD yang tidak ditangani dapat memicu depresi dan gangguan cemas lainnya."
+      }
+    ]
+  },
+  "bipolar": {
+    "display_name": "Gangguan Bipolar",
+    "definition": "Gangguan bipolar adalah gangguan mental yang ditandai dengan perubahan suasana hati yang drastis, dari episode mania (sangat gembira/euforia) ke episode depresi (sangat sedih).",
+    "suggestions": [
+      {
+        "category": "🎭 Mengenali Gejala",
+        "title": "Waspadai Dua Fase Ekstrem",
+        "description": "Fase mania ditandai dengan semangat menggebu dan sulit tidur. Sebaliknya, fase depresi ditandai dengan hilangnya minat pada berbagai kegiatan dan munculnya perasaan bersalah yang berlebihan."
+      },
+      {
+        "category": "🧘 Manajemen Diri",
+        "title": "Kelola Gaya Hidup Sehat",
+        "description": "Olahraga rutin, tidur yang cukup, dan mengelola stres dengan baik dapat membantu mengurangi kekambuhan gejala. Sangat penting untuk tidak mengonsumsi alkohol atau NAPZA."
+      },
+      {
+        "category": "🧑‍⚕️ Kapan Harus ke Dokter",
+        "title": "Perawatan Jangka Panjang",
+        "description": "Gangguan bipolar memerlukan penanganan seumur hidup dari psikiater. Pengobatan biasanya berupa kombinasi obat-obatan dan psikoterapi untuk membantu penderita menjalani aktivitas sehari-hari dengan normal."
+      }
+    ]
+  },
+  "adhd": {
+    "display_name": "Attention-Deficit/Hyperactivity Disorder (ADHD)",
+    "definition": "ADHD adalah gangguan perkembangan saraf yang memengaruhi kemampuan seseorang untuk memusatkan perhatian (inatensi) dan mengontrol perilaku impulsif (hiperaktivitas-impulsivitas).",
+    "suggestions": [
+      {
+        "category": "📝 Mengenali Gejala",
+        "title": "Perhatikan Gejala Utama",
+        "description": "Pada anak-anak, gejalanya bisa berupa sulit fokus, mudah terganggu, gelisah, dan sering menyela pembicaraan. Pada orang dewasa, bisa berupa kesulitan menyelesaikan tugas dan masalah dalam hubungan sosial."
+      },
+      {
+        "category": "🧘 Manajemen Diri",
+        "title": "Gunakan Teknik 'Time Management'",
+        "description": "Pecah tugas besar menjadi beberapa bagian kecil dan gunakan alarm atau pengingat untuk tetap fokus pada jadwal. Buat daftar prioritas untuk menentukan pekerjaan mana yang harus didahulukan."
+      },
+      {
+        "category": "🧑‍⚕️ Kapan Harus ke Dokter",
+        "title": "Jika Memengaruhi Kualitas Hidup",
+        "description": "Jika gejala ADHD menyebabkan frustrasi berulang, kesulitan dalam pekerjaan atau sekolah, dan memperburuk kondisi mental lain seperti depresi, penting untuk mencari diagnosis dan penanganan dari profesional."
+      }
+    ]
+  },
+  "ptsd": {
+    "display_name": "Post-Traumatic Stress Disorder (PTSD)",
+    "definition": "PTSD atau gangguan stres pascatrauma adalah gangguan mental yang dapat muncul setelah seseorang mengalami atau menyaksikan peristiwa traumatis yang mengancam nyawa.",
+    "suggestions": [
+      {
+        "category": "🧠 Mengenali Gejala",
+        "title": "Waspadai Ingatan Intrusif",
+        "description": "Gejala umum adalah munculnya ingatan kejadian traumatis secara berulang, mimpi buruk, dan merasa seolah-olah peristiwa itu terjadi kembali (flashback)."
+      },
+      {
+        "category": "🧘 Manajemen Diri",
+        "title": "Cari Dukungan & Lakukan Kegiatan Positif",
+        "description": "Mencari dukungan dari teman, keluarga, atau support group sangatlah penting. Selain itu, alihkan pikiran dengan melakukan kegiatan positif yang disukai untuk membantu melewati kesedihan akibat trauma."
+      },
+      {
+        "category": "🧑‍⚕️ Kapan Harus ke Dokter",
+        "title": "Jika Gejala Menetap",
+        "description": "Jika Anda terus menerus menghindari situasi yang mengingatkan pada trauma atau mengalami perubahan emosi negatif seperti mudah marah dan sulit konsentrasi, segera cari bantuan profesional."
+      }
+    ]
+  },
+  "skizofrenia": {
+    "display_name": "Skizofrenia",
+    "definition": "Skizofrenia adalah gangguan mental serius yang memengaruhi cara seseorang berpikir, merasa, dan berperilaku. Penderitanya bisa mengalami halusinasi, delusi, dan kekacauan dalam berpikir.",
+    "suggestions": [
+      {
+        "category": "👁️ Mengenali Gejala",
+        "title": "Bedakan Gejala Positif & Negatif",
+        "description": "Gejala positif mencakup halusinasi (melihat/mendengar sesuatu yang tidak nyata) dan delusi (keyakinan yang salah). Gejala negatif berupa hilangnya minat pada aktivitas sehari-hari dan tidak mampu merasakan emosi."
+      },
+      {
+        "category": "🧘 Manajemen Diri",
+        "title": "Hindari Pemicu",
+        "description": "Penting untuk tidak menggunakan NAPZA atau mengonsumsi minuman beralkohol, karena zat tersebut dapat memperburuk gejala. Bicarakan dengan dokter jika pernah mengalami trauma masa lalu."
+      },
+      {
+        "category": "🧑‍⚕️ Kapan Harus ke Dokter",
+        "title": "Pengobatan Seumur Hidup",
+        "description": "Skizofrenia memerlukan kontrol rutin dan pengobatan seumur hidup untuk mengelola gejalanya. Penanganan yang tepat sangat penting karena penderitanya memiliki risiko lebih tinggi untuk mengalami depresi atau melakukan percobaan bunuh diri."
+      }
+    ]
+  }
+}

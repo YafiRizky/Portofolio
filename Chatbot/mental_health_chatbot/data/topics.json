@@ -1,0 +1,104 @@
+{
+  "categories": [
+    {
+      "name": "Kondisi Umum & Emosi",
+      "topics": [
+        {
+          "key": "stres",
+          "display_name": "🤯 Mengelola Stres",
+          "description": "Saat semuanya terasa membebani dan membuat tertekan."
+        },
+        {
+          "key": "kecemasan",
+          "display_name": "😥 Menenangkan Kecemasan",
+          "description": "Untuk kamu yang sering merasa khawatir atau gelisah berlebihan."
+        },
+        {
+          "key": "depresi",
+          "display_name": "🌧️ Memahami Perasaan Sedih & Hampa",
+          "description": "Ketika perasaan murung tak kunjung hilang dan minat menurun."
+        },
+        {
+          "key": "marah",
+          "display_name": "😠 Mengelola Rasa Marah",
+          "description": "Cara sehat menyalurkan emosi, frustasi, atau kekesalan."
+        }
+      ]
+    },
+    {
+      "name": "Pola Pikir & Tidur",
+      "topics": [
+        {
+          "key": "overthinking",
+          "display_name": "🧠 Lawan Pikiran Negatif (Overthinking)",
+          "description": "Sebuah sesi terpandu untuk menantang pola pikir yang berulang."
+        },
+        {
+          "key": "insomnia",
+          "display_name": "😴 Kiat untuk Tidur Lebih Nyenyak",
+          "description": "Strategi praktis saat sulit tidur atau tidur tidak berkualitas."
+        }
+      ]
+    },
+    {
+      "name": "Hubungan & Kehidupan Sosial",
+      "topics": [
+        {
+          "key": "perpisahan",
+          "display_name": "💔 Menyembuhkan Patah Hati",
+          "description": "Menghadapi duka dan proses penyembuhan setelah putus hubungan."
+        },
+        {
+          "key": "kesepian",
+          "display_name": "🧍 Merasa Kesepian",
+          "description": "Saat merasa sendiri, terisolasi, atau tidak ada yang peduli."
+        },
+        {
+          "key": "masalah_keluarga",
+          "display_name": "👨‍👩‍👧‍👦 Konflik dalam Keluarga",
+          "description": "Menghadapi lingkungan atau hubungan keluarga yang sulit."
+        },
+        {
+          "key": "media_sosial",
+          "display_name": "📱 Lelah dengan Media Sosial",
+          "description": "Mengatasi dampak perbandingan dan kecanduan scroll."
+        }
+      ]
+    },
+    {
+      "name": "Tantangan & Perawatan Diri",
+      "topics": [
+        {
+          "key": "quarter_life_crisis",
+          "display_name": "🧭 Bingung Arah & Tujuan Hidup",
+          "description": "Menghadapi krisis identitas dan ketidakpastian masa depan."
+        },
+        {
+          "key": "motivasi",
+          "display_name": "💡 Mencari Motivasi",
+          "description": "Menemukan kembali semangat dan dorongan untuk maju."
+        },
+        {
+          "key": "self_care",
+          "display_name": "💖 Ide Perawatan Diri (Self-Care)",
+          "description": "Menemukan cara sederhana untuk menyayangi dan merawat dirimu."
+        }
+      ]
+    },
+    {
+      "name": "Info Kondisi & Trauma",
+      "topics": [
+        {
+          "key": "bpd",
+          "display_name": "ℹ️ Info: Borderline Personality (BPD)",
+          "description": "Penjelasan mengenai kondisi kesulitan mengatur emosi."
+        },
+        {
+          "key": "trauma",
+          "display_name": "🩹 Memahami Trauma",
+          "description": "Mengenali dampak dari pengalaman menyakitkan di masa lalu."
+        }
+      ]
+    }
+  ]
+}

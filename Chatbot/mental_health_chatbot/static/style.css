@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    /* [DIHAPUS] Latar belakang gradien yang lama dihapus.
+    background: #1a1a2e; 
+    background-image: radial-gradient(circle, #16222a, #3a6073);
+    */
+
+    /* [DITAMBAHKAN] Pengaturan latar belakang baru dengan gambar. */
+    /* Pastikan file 'galaxy.jpg' ada di dalam folder 'static' Anda. */
+    background-image: url('galaxy.jpg');
+    background-size: cover; /* Gambar akan menutupi seluruh area. */
+    background-position: center; /* Gambar akan diposisikan di tengah. */
+    background-repeat: no-repeat; /* Gambar tidak akan diulang. */
+    background-attachment: fixed; /* Latar belakang akan tetap diam saat halaman di-scroll. */
+    
+    min-height: 100vh;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.header-content h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-shadow: 0 2px 8px rgba(128, 222, 234, 0.5);
+}
+
+.header-content p {
+    font-size: 1.1rem;
+    color: #b0bec5;
+}
+
+.main-layout {
+    display: grid;
+    grid-template-columns: 2fr 5fr 2.5fr; 
+    gap: 25px;
+    flex: 1;
+}
+
+.left-sidebar, .right-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.chat-area { display: flex; flex-direction: column; }
+
+.chat-container {
+    background: rgba(22, 34, 42, 0.75); /* Sedikit lebih transparan agar background terlihat */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur(12px); /* Efek blur pada background di belakang elemen */
+    -webkit-backdrop-filter: blur(12px);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    max-height: calc(100vh - 150px);
+}
+
+.chat-header {
+    background: rgba(0, 0, 0, 0.2);
+    color: white;
+    padding: 15px 20px;
+}
+
+.bot-info { display: flex; align-items: center; gap: 15px; }
+.bot-avatar { width: 45px; height: 45px; border-radius: 50%; background: #3a6073; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; }
+.bot-details h3 { font-size: 1.1rem; font-weight: 600; margin: 0; }
+.status { font-size: 0.85rem; color: #80deea; }
+
+.chat-messages {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+}
+.chat-messages::-webkit-scrollbar { width: 5px; }
+.chat-messages::-webkit-scrollbar-track { background: transparent; }
+.chat-messages::-webkit-scrollbar-thumb { background: rgba(255, 255, 255, 0.2); border-radius: 5px; }
+
+.message { display: flex; flex-direction: column; max-width: 85%; margin-bottom: 20px; }
+.user-message { align-self: flex-end; align-items: flex-end; }
+.bot-message { align-self: flex-start; align-items: flex-start; }
+
+.message-content {
+    padding: 12px 18px;
+    border-radius: 18px;
+    word-wrap: break-word;
+}
+.message-content p { margin: 0; }
+.user-message .message-content {
+    background: linear-gradient(135deg, #80deea, #00acc1);
+    color: #111;
+    border-bottom-right-radius: 5px;
+}
+.bot-message .message-content {
+    background: rgba(0, 0, 0, 0.4);
+    color: #e0e0e0;
+    border-bottom-left-radius: 5px;
+}
+.bot-message strong { color: #80deea; }
+.bot-message a { color: #80deea; text-decoration: none; }
+.message-time { font-size: 0.75rem; color: #90a4ae; margin-top: 5px; padding: 0 5px; }
+
+.chat-input-form { padding: 15px; background: rgba(0, 0, 0, 0.2); }
+.input-container { display: flex; gap: 10px; }
+#userInput {
+    flex: 1; padding: 12px 20px; border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 25px; font-size: 1rem; outline: none;
+    background: rgba(0, 0, 0, 0.3); color: #fff; transition: border-color 0.3s;
+}
+#userInput:focus { border-color: #80deea; }
+#sendButton {
+    width: 48px; height: 48px; border: none; border-radius: 50%;
+    background: linear-gradient(135deg, #80deea, #00acc1);
+    color: #111; cursor: pointer; display: flex; align-items: center; justify-content: center;
+    transition: all 0.2s ease;
+}
+#sendButton:hover:not(:disabled) { transform: scale(1.1); }
+#sendButton:disabled { opacity: 0.5; cursor: not-allowed; }
+.loading-spinner { width: 20px; height: 20px; border: 2px solid rgba(0,0,0,0.3); border-top-color: #111; border-radius: 50%; animation: spin 1s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.sidebar-section {
+    background: rgba(22, 34, 42, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+.sidebar-section h3 { font-size: 1.1rem; margin-bottom: 10px; color: #80deea; }
+.sidebar-description { font-size: 0.9rem; color: #b0bec5; margin-bottom: 20px; }
+
+.emergency-notice, .disclaimer {
+    font-size: 0.85rem; padding: 10px; border-radius: 8px;
+    background: rgba(255, 236, 179, 0.1); border-left: 3px solid #ffca28; color: #ffe082;
+}
+.disclaimer { background: rgba(176, 190, 197, 0.1); border-left-color: #78909c; color: #b0bec5; }
+
+.hotlines { display: flex; flex-direction: column; gap: 10px; }
+.hotline-item { padding: 10px; border-radius: 8px; background: rgba(0, 0, 0, 0.2); }
+.hotline-header { display: flex; justify-content: space-between; align-items: center; }
+.hotline-header strong { color: #eceff1; font-size: 0.9rem; }
+.hotline-number { background: #37474f; color: #b0bec5; padding: 3px 8px; border-radius: 10px; font-size: 0.8rem; }
+.hotline-description { font-size: 0.85rem; color: #90a4ae; margin: 5px 0 0 0; }
+
+.topic-category-group { margin-bottom: 20px; }
+.topic-category-group h4 {
+    margin-bottom: 12px;
+    color: #b0bec5;
+    font-weight: 500;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 5px;
+}
+.topic-list { display: flex; flex-direction: column; gap: 10px; }
+.topic-button {
+    background: rgba(0, 0, 0, 0.2);
+    color: #b0bec5;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 12px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: left;
+    width: 100%;
+    transition: all 0.2s ease;
+}
+.topic-button:hover {
+    background: rgba(128, 222, 234, 0.15);
+    border-color: rgba(128, 222, 234, 0.5);
+}
+.topic-title {
+    display: block;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #e0e0e0;
+    margin-bottom: 4px;
+}
+.topic-description {
+    display: block;
+    font-size: 0.85rem;
+    color: #90a4ae;
+}
+
+@media (max-width: 1200px) {
+    .main-layout { grid-template-columns: 1fr 3fr; }
+    .right-sidebar { display: none; }
+}
+@media (max-width: 768px) {
+    .main-layout { grid-template-columns: 1fr; }
+    .left-sidebar { order: 2; }
+    .chat-area { order: 1; }
+    .chat-container { max-height: 65vh; }
+    .right-sidebar { order: 3; }
+    .right-sidebar { display: block; }
+}
+
+/* === KODE BARU UNTUK SCROLLBAR TOPIK === */
+
+/* Membuat kontainer topik dapat di-scroll secara independen */
+.topic-categories {
+    /* Tentukan tinggi maksimal. Nilai ini (calc(100vh - 320px)) 
+       dihitung agar tingginya selaras dengan kotak chat, 
+       dengan memperhitungkan header halaman dan judul di atasnya.
+    */
+    max-height: calc(100vh - 320px);
+    overflow-y: auto; /* Aktifkan scroll vertikal JIKA kontennya lebih panjang */
+    
+    /* Memberi jarak agar scrollbar tidak menempel ke tepi tombol */
+    padding-right: 15px; 
+    
+    /* Trik agar padding tidak membuat kontainer melebar */
+    margin-right: -15px;
+}
+
+/* Styling untuk scrollbar agar konsisten dengan tampilan chat */
+.topic-categories::-webkit-scrollbar {
+    width: 6px;
+}
+
+.topic-categories::-webkit-scrollbar-track {
+    background: transparent;
+    margin-block: 5px;
+}
+
+.topic-categories::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 6px;
+}
+
+.topic-categories::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.4);
+}

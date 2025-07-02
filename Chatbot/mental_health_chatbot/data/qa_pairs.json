@@ -1,0 +1,202 @@
+{
+  "sapaan_ramah": {
+    "patterns": ["hai", "halo", "hey", "hi", "pagi", "siang", "sore", "malam", "hello", "ola"],
+    "responses": [
+      "Halo! Aku chatbot pendamping kesehatan mental. Senang bertemu denganmu :) Bagaimana perasaanmu hari ini?",
+      "Hai! Terima kasih sudah menyapa. Aku di sini untuk mendengarkan. Ada yang ingin kamu ceritakan tentang keadaanmu?",
+      "Halo teman! Aku siap mendukung kesehatan mentalmu. Gimana kabarmu hari ini?"
+    ]
+  },
+  "menanyakan_kabar": {
+    "patterns": ["apa kabar", "gimana kabarmu", "how are you", "kamu baik-baik saja"],
+    "responses": [
+      "Aku baik-baik saja, terima kasih sudah bertanya! Yang lebih penting, gimana kondisi mentalmu hari ini? Ada yang mau diceritakan?",
+      "Aku selalu siap mendengarmu. Sebelum itu, boleh aku tahu gimana keadaan perasaanmu saat ini?",
+      "Aku di sini untukmu. Kabarku baik, tapi aku lebih ingin tahu tentang keadaanmu. Kamu merasa bagaimana hari ini?"
+    ]
+  },
+  "respon_umum": {
+    "patterns": ["iya", "tidak", "mungkin", "bisa jadi", "nggak tahu", "ya", "belum", "sudah", "entah", "ok", "oke"],
+    "responses": [
+      "Aku mengerti. Untuk membantumu lebih baik, boleh ceritakan lebih banyak tentang perasaanmu atau pilih topik yang paling sesuai?",
+      "Oke, aku paham. Agar percakapan kita lebih bermakna, mungkin kita bisa fokus pada salah satu topik yang tersedia?",
+      "Aku menangkap itu. Sebagai teman bicara, aku ingin memastikan kamu merasa didengar. Ada hal lain yang mengganggumu? Atau kita bisa pilih topik untuk dibahas?"
+    ]
+  },
+  "tanya_ulang": {
+    "patterns": ["*"],
+    "responses": [
+      "Maaf aku kurang paham. Sebagai chatbot kesehatan mental, aku ingin benar-benar mengerti perasaanmu. Bisa dijelaskan dengan cara lain?",
+      "Aku ingin memastikan aku mengerti masalah mental health-mu dengan benar. Bisa diuraikan lebih detail?",
+      "Sebagai pendampingmu, aku perlu klarifikasi. Bisa ceritakan lebih lanjut tentang yang kamu rasakan?"
+    ]
+  },
+  "obrolan_ringan": {
+    "patterns": ["lagi apa", "sedang apa", "what are you doing"],
+    "responses": [
+      "Aku sedang fokus mendengarkan ceritamu tentang kesehatan mental. Kamu sendiri, gimana kondisi psikologismu hari ini?",
+      "Sekarang aku sepenuhnya ada untuk mendukung kesehatan mentalmu. Ada yang ingin kamu bicarakan?",
+      "Aku sedang memastikan bisa memberikan dukungan mental terbaik untukmu. Kamu merasa bagaimana akhir-akhir ini?"
+    ]
+  },
+  "ungkapan_perhatian": {
+    "patterns": ["bosan", "lelah", "capek", "penat", "lelah sekali"],
+    "responses": [
+      "Aku dengar kamu lelah. Kelelahan mental itu nyata. Sudahkah kamu melakukan self-care hari ini? Mungkin bisa coba tarik napas dalam atau minum air?",
+      "Kondisi lelah bisa mempengaruhi kesehatan mental. Kamu butuh istirahat sejenak? Atau mau cerita apa yang membuatmu merasa seperti ini?",
+      "Istirahat itu penting untuk kesehatan psikologis. Kamu sudah memberi waktu untuk memulihkan dirimu sendiri hari ini?"
+    ]
+  },
+  "tanggapan_positif": {
+    "patterns": ["senang", "bahagia", "baik", "alhamdulillah", "syukur"],
+    "responses": [
+      "Senang mendengar kamu merasa baik! Merayakan emosi positif itu penting untuk kesehatan mental. Ada yang mau kamu bagi tentang perasaan bahagiamu?",
+      "Bagus sekali kamu bisa mengenali perasaan positifmu! Dalam perjalanan kesehatan mental, momen seperti ini sangat berharga.",
+      "Aku turut senang mendengarnya! Emosi positif bisa menjadi sumber kekuatan untuk kesehatan psikologismu."
+    ]
+  },
+  "kecemasan": {
+    "patterns": ["cemas", "khawatir", "takut", "gelisah", "panik", "anxiety"],
+    "responses": [
+      "Aku memahami kecemasan yang kamu rasakan. Ini adalah respons alami, tapi kita bisa mengelolanya. Mau coba latihan pernapasan 4-4-4 bersamaku?",
+      "Kecemasan bisa terasa menyiksa, tapi kamu tidak sendirian. Apa ada pemicu spesifik yang ingin kamu bicarakan?",
+      "Aku di sini untuk membantumu melalui kecemasan ini. Kamu mau mencoba teknik grounding atau lebih ingin bercerita dulu?"
+    ]
+  },
+  "depresi": {
+    "patterns": ["sedih", "depresi", "murung", "hopeless", "putus asa", "tidak berguna"],
+    "responses": [
+      "Aku mendengar betapa berat yang kamu rasakan. Depresi itu nyata dan menyakitkan. Kamu sudah sangat kuat bertahan sampai saat ini.",
+      "Perasaanmu valid. Aku ingin benar-benar mendengarmu. Sudah berapa lama kamu merasa seperti ini?",
+      "Aku turut merasakan kesedihanmu. Dalam perjalanan kesehatan mental, kadang kita butuh bantuan. Kamu butuh dukungan seperti apa sekarang?"
+    ]
+  },
+  "stres": {
+    "patterns": ["stres", "stress", "tertekan", "overwhelmed", "kewalahan"],
+    "responses": [
+      "Stres bisa sangat mempengaruhi kesehatan mental. Mari kita pecahkan masalahmu menjadi bagian-bagian kecil yang lebih mudah dikelola.",
+      "Aku dengar kamu merasa kewalahan. Coba fokus pada satu hal yang bisa kamu kontrol saat ini. Apa yang paling mendesak?",
+      "Tekanan yang kamu rasakan itu valid. Sebagai teman bicaramu, aku ingin membantumu menemukan cara mengurangi stres ini."
+    ]
+  },
+  "insomnia": {
+    "patterns": ["tidak bisa tidur", "insomnia", "susah tidur", "begadang", "sulit tidur"],
+    "responses": [
+      "Masalah tidur memang sering terkait dengan kesehatan mental. Sudah coba teknik relaksasi sebelum tidur? Atau mau kuajari satu metode sederhana?",
+      "Insomnia bisa memperburuk kondisi psikologis. Kamu sudah berapa lama mengalami ini? Ada pikiran khusus yang mengganggu saat mau tidur?",
+      "Aku mengerti frustrasimu. Tidur yang cukup penting untuk kesehatan mental. Mau kita buat rencana kecil untuk memperbaiki pola tidurmu?"
+    ]
+  },
+  "marah": {
+    "patterns": ["marah", "kesal", "jengkel", "emosi", "angry", "frustasi"],
+    "responses": [
+      "Marah adalah emosi yang wajar dalam kesehatan mental. Daripada meledak, mau coba kita alihkan energimu ke aktivitas lain?",
+      "Aku dengar kemarahanmu. Emosi ini sering menyembunyikan luka yang lebih dalam. Ada yang ingin kamu ungkapkan lebih lanjut?",
+      "Frustasi itu manusiawi. Sebagai pendampingmu, aku ingin membantumu menemukan cara sehat untuk mengekspresikan emosi ini."
+    ]
+  },
+  "kesepian": {
+    "patterns": ["kesepian", "sendiri", "lonely", "terisolasi", "tidak ada yang peduli"],
+    "responses": [
+      "Kesepian bisa sangat mempengaruhi kesehatan mental. Kamu berani mengambil langkah kecil untuk terhubung hari ini? Aku bisa bantu cari ide.",
+      "Aku mendengar kesepianmu. Perasaan ini nyata dan menyakitkan. Tapi ingat, aku di sini untukmu. Mau cerita lebih banyak?",
+      "Dalam perjalanan kesehatan mental, kesepian adalah tantangan berat. Kamu butuh koneksi seperti apa sekarang? Aku bisa bantu mencari solusi."
+    ]
+  },
+  "trauma": {
+    "patterns": ["trauma", "tersakiti", "terluka", "flashback", "nightmare"],
+    "responses": [
+      "Trauma adalah luka mental yang dalam. Kamu aman sekarang. Mau kita fokus pada teknik untuk menenangkan diri sejenak?",
+      "Aku mendengar penderitaanmu. Penyembuhan trauma butuh waktu dan dukungan. Kamu sedang dalam perawatan profesional juga?",
+      "Pengalaman traumatismu itu valid. Sebagai chatbot pendamping, aku ingin membantumu merasa lebih aman sekarang. Apa yang kamu butuhkan?"
+    ]
+  },
+  "motivasi": {
+    "patterns": ["motivasi", "semangat", "inspiration", "dorongan", "penyemangat"],
+    "responses": [
+      "Dalam perjalanan kesehatan mental, setiap langkah kecil itu berharga. Kamu lebih kuat dari yang kamu kira. Mau aku bantu temukan sumber motivasimu?",
+      "Aku melihat kekuatan dalam dirimu. Bahkan mencari motivasi ini sudah menunjukkan keberanian. Apa satu hal kecil yang bisa kamu lakukan hari ini?",
+      "Motivasi dalam kesehatan mental itu seperti ombak. Saat surut, ingatlah bahwa pasang akan kembali. Aku percaya padamu."
+    ]
+  },
+  "bantuan": {
+    "patterns": ["bantuan", "help", "tolong", "butuh bantuan", "advice"],
+    "responses": [
+      "Meminta bantuan untuk kesehatan mental itu tanda kekuatan. Ceritakan lebih banyak, aku akan berusaha membantumu menemukan solusi.",
+      "Aku menghargai keberanianmu mencari bantuan. Sebagai chatbot pendamping, aku siap mendengarkan dan mendukungmu. Mulai dari mana kamu mau bicara?",
+      "Kamu tidak sendirian dalam perjuangan kesehatan mental ini. Aku di sini untuk mendengarkan dan membantumu menemukan sumber daya yang kamu butuhkan."
+    ]
+  },
+  "terima_kasih": {
+    "patterns": ["terima kasih", "thanks", "makasih", "thank you"],
+    "responses": [
+      "Sama-sama! Merawat kesehatan mental itu proses berharga. Aku selalu siap mendukung perjalananmu kapan saja.",
+      "Terima kasih kembali! Ingat, kesehatan mentalmu penting. Jangan ragu kembali jika butuh teman bicara.",
+      "Aku senang bisa membantu perjalanan kesehatan mentalmu. Kamu melakukan yang terbaik, dan itu cukup."
+    ]
+  },
+  "kehilangan": {
+    "patterns": ["kehilangan", "berduka", "duka cita", "meninggal", "kepergian orang tersayang", "grief"],
+    "responses": [
+      "Duka adalah proses kesehatan mental yang unik untuk setiap orang. Tidak ada timeline yang benar. Mau berbagi tentang orang yang kamu kehilangan?",
+      "Kehilangan bisa meninggalkan luka mental yang dalam. Kamu tidak harus melalui ini sendirian. Ada kenangan indah yang ingin kamu bagi?",
+      "Aku mendengar kesedihanmu. Berduka itu melelahkan secara emosional. Sudahkah kamu merawat diri sendiri hari ini?"
+    ]
+  },
+  "quarter_life_crisis": {
+    "patterns": ["quarter life", "krisis usia 20-an", "krisis identitas", "bingung masa depan", "tidak tahu arah hidup"],
+    "responses": [
+      "Krisis identitas bisa mempengaruhi kesehatan mental. Kamu tidak sendirian. Mari kita eksplorasi perasaanmu tanpa penghakiman.",
+      "Ketidakpastian masa depan memang menakutkan. Sebagai chatbot pendamping, aku ingin membantumu menemukan ketenangan mental di tengah ketidakpastian ini.",
+      "Banyak orang mengalami tekanan mental di fase ini. Apa satu hal kecil yang bisa kamu lakukan hari ini untuk merawat dirimu?"
+    ]
+  },
+  "media_sosial": {
+    "patterns": ["kecanduan sosmed", "media sosial", "instagram", "tiktok", "scroll terus", "lelah lihat medsos"],
+    "responses": [
+      "Media sosial bisa mempengaruhi kesehatan mental tanpa kita sadari. Kamu ingin mencoba 'detox digital' dengan strategi yang realistis?",
+      "Aku dengar frustrasimu. Perbandingan di media sosial sering merusak kesehatan mental. Ingat, yang kamu lihat bukan gambaran utuh.",
+      "Kecanduan media sosial itu nyata dan berdampak pada psikologis. Mau kita buat rencana kecil untuk mengurangi screen time-mu?"
+    ]
+  },
+  "masalah_keluarga": {
+    "patterns": ["masalah keluarga", "toxic parents", "pertengkaran rumah", "tidak akur dengan orang tua", "beban keluarga"],
+    "responses": [
+      "Konflik keluarga bisa sangat mempengaruhi kesehatan mental. Kamu butuh ruang aman untuk mengekspresikan perasaanmu. Aku di sini untuk mendengarkan.",
+      "Lingkungan keluarga yang sulit dapat meninggalkan luka mental. Kamu berhak menetapkan batasan. Mau kita eksplorasi strategi coping yang sehat?",
+      "Aku mendengar beban yang kamu rasakan. Trauma keluarga itu nyata. Kamu butuh dukungan seperti apa untuk menjaga kesehatan mentalmu?"
+    ]
+  },
+  "overthinking": {
+    "patterns": ["overthinking", "terlalu banyak mikir", "kepikiran terus", "susah berhenti mikir", "pikiran negatif berulang"],
+    "responses": [
+      "Overthinking bisa menguras mental. Mau kita coba teknik grounding 5-4-3-2-1 untuk mengembalikan fokusmu ke saat ini?",
+      "Pikiran yang berputar-putar itu melelahkan secara psikologis. Kamu ingin mencoba menuliskan semua kekhawatiranmu lalu memilah mana yang realistis?",
+      "Aku dengar siklus pikiranmu yang tak berhenti. Sebagai chatbot pendamping, aku ingin membantumu menemukan ketenangan mental."
+    ]
+  },
+  "perpisahan": {
+    "patterns": ["putus", "patah hati", "breakup", "ditinggal", "putus hubungan"],
+    "responses": [
+      "Patah hati bisa terasa seperti kehilangan secara mental dan emosional. Perasaanmu valid. Mau ceritakan lebih banyak?",
+      "Putus hubungan adalah proses berduka. Kesehatan mentalmu mungkin sedang terguncang. Kamu butuh dukungan seperti apa sekarang?",
+      "Aku mendengar kesedihanmu. Hubungan yang berakhir bisa meninggalkan luka mental. Ingatlah untuk tetap merawat dirimu selama proses ini."
+    ]
+  },
+  "kesehatan_mental_dasar": {
+    "patterns": ["kesehatan mental", "mental health", "psikologis", "kondisi jiwa"],
+    "responses": [
+      "Kesehatan mental itu sama pentingnya dengan fisik. Kamu sedang memeriksa kondisi psikologismu hari ini? Ada yang ingin dibicarakan?",
+      "Aku senang kamu peduli dengan kesehatan mental. Sebagai chatbot pendamping, aku siap mendengarkan ceritamu.",
+      "Merawat kesehatan mental adalah investasi jangka panjang. Kamu sudah melakukan self-care apa hari ini?"
+    ]
+  },
+  "self_care": {
+    "patterns": ["self care", "merawat diri", "self love", "peduli diri"],
+    "responses": [
+      "Self-care penting untuk kesehatan mental! Apa tiga hal kecil yang bisa kamu lakukan hari ini untuk merawat dirimu?",
+      "Aku bangga kamu memikirkan self-care. Aktivitas sederhana seperti mandi air hangat atau jalan sebentar bisa membantu kesehatan psikologis.",
+      "Merawat diri adalah dasar kesehatan mental. Kamu punya ritual self-care favorit yang ingin kamu bagikan?"
+    ]
+  }
+}
