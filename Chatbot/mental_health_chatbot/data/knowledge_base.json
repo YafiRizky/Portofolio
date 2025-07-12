@@ -166,5 +166,26 @@
         "description": "Skizofrenia memerlukan kontrol rutin dan pengobatan seumur hidup untuk mengelola gejalanya. Penanganan yang tepat sangat penting karena penderitanya memiliki risiko lebih tinggi untuk mengalami depresi atau melakukan percobaan bunuh diri."
       }
     ]
+  },
+  "bpd": {
+      "display_name": "Borderline Personality Disorder (BPD)",
+      "definition": "Gangguan Kepribadian Ambang (BPD) adalah kondisi kesehatan mental yang ditandai dengan kesulitan dalam mengatur emosi. Ini dapat menyebabkan perubahan suasana hati yang intens, masalah citra diri, dan kesulitan dalam menjaga hubungan yang stabil.",
+      "suggestions": [
+          {
+              "category": "❤️ Pola Hubungan",
+              "title": "Mengenali Hubungan 'Hitam-Putih'",
+              "description": "Penderita BPD sering melihat orang lain atau situasi sebagai 'sepenuhnya baik' atau 'sepenuhnya buruk'. Menyadari pola pikir ini adalah langkah pertama untuk membangun hubungan yang lebih seimbang."
+          },
+          {
+              "category": "🧘 Manajemen Emosi",
+              "title": "Gunakan Teknik 'TIPP'",
+              "description": "Saat emosi memuncak, coba ubah suhu tubuhmu (T-emperature) dengan air dingin, lakukan olahraga intens (I-ntense exercise), atur pernapasan (P-aced breathing), dan relaksasi otot (P-aired muscle relaxation). Ini membantu menenangkan diri secara fisik."
+          },
+          {
+              "category": "🧑‍⚕️ Bantuan Profesional",
+              "title": "Terapi DBT (Dialectical Behavior Therapy)",
+              "description": "DBT adalah jenis terapi yang dirancang khusus untuk BPD. Terapi ini sangat efektif dalam mengajarkan keterampilan untuk mengelola emosi, menoleransi stres, dan memperbaiki hubungan."
+          }
+      ]
   }
 }

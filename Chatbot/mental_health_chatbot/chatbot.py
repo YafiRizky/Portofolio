@@ -312,13 +312,13 @@ class MentalHealthChatbot:
         if (response := self._handle_start_flow(input_text)):
             return response
 
-        # 4. Handle General Q&A
-        if (qa_response := self._get_qa_response(input_text)):
-            return qa_response
-
-        # 5. Suggest Topic based on keywords
+        # 4. Suggest Topic based on keywords (PRIORITAS LEBIH TINGGI)
         if (suggested_topic := self._find_relevant_topic(input_text)):
             return self._get_contextual_response(suggested_topic)
+
+        # 5. Handle General Q&A (SETELAH CEK TOPIK)
+        if (qa_response := self._get_qa_response(input_text)):
+            return qa_response
 
         # [PERUBAHAN UTAMA] 6. Gunakan Model AI sebagai Fallback Cerdas
         if (ml_response := self._generate_ml_response(input_text)):
@@ -363,19 +363,19 @@ class MentalHealthChatbot:
         """[FUNGSI BARU] Menghasilkan respons menggunakan model AI jika tersedia."""
         if not self.ml_model or not self.ml_tokenizer:
             return None # Model tidak dimuat, jadi lewati langkah ini
-        
+
         try:
             logger.info("Menggunakan model AI untuk menghasilkan respons...")
-            # Menggunakan riwayat percakapan untuk konteks yang lebih baik
-            conversation_history = self.context.get_history_string()
-            
-            inputs = self.ml_tokenizer(conversation_history, return_tensors="pt")
+            # [PERBAIKAN] Hanya gunakan input terakhir pengguna untuk model AI yang lebih simpel
+            inputs = self.ml_tokenizer(text, return_tensors="pt")
             reply_ids = self.ml_model.generate(**inputs)
-            response = self.ml_tokenizer.batch_decode(reply_ids, skip_special_tokens=True)[0]
-            
+            response = self.ml_tokenizer.batch_decode(reply_ids, skip_special_tokens=True)[0].strip()
+
             # Tambahkan respons bot ke riwayat
-            self.context.add_to_history(f"Bot: {response}")
-            return response
+            if response:
+                self.context.add_to_history(f"Bot: {response}")
+                return response
+            return None
         except Exception as e:
             logger.error(f"Error saat menghasilkan respons dari model AI: {e}")
             return None
