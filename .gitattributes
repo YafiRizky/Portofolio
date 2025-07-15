@@ -1,1 +1,4 @@
 *.zip filter=lfs diff=lfs merge=lfs -text
+Klasifikasi_Nama_Kartu/train/**/*.jpg filter=lfs diff=lfs merge=lfs -text
+Klasifikasi_Nama_Kartu/test/**/*.jpg filter=lfs diff=lfs merge=lfs -text
+Klasifikasi_Nama_Kartu/valid/**/*.jpg filter=lfs diff=lfs merge=lfs -text

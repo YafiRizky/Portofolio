@@ -6,6 +6,10 @@ __pycache__/
 # C extensions
 *.so
 
+# Mengabaikan file spesifik di dalam proyek Klasifikasi_Nama_Kartu
+# Abaikan semua file model .h5
+*.h5
+
 # Distribution / packaging
 .Python
 build/
